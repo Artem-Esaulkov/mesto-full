@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build dist"
+    "deploy": "npm run build && scp -r ./build/* artem-esaulkov@51.250.93.215:/home/artem-esaulkov/frontend"
   },
   "eslintConfig": {
     "extends": [
